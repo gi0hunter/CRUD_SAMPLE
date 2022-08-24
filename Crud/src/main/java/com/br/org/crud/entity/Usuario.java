@@ -1,6 +1,7 @@
 package com.br.org.crud.entity;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -39,7 +40,7 @@ public class Usuario implements Serializable {
 	private String nome;
 
 	@Column(name = "dataNascimento")
-	private Date dataNascimento;
+	private LocalDate dataNascimento;
 
 	@Column(name = "imgPath")
 	private String imgPath;
