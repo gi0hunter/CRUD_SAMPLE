@@ -35,7 +35,7 @@ public class UsuarioController {
 		return ResponseEntity.ok().body(usuarioService.findById(id));
 	}
 
-	@GetMapping(value = "/{id}")
+	@GetMapping(value = "/all")
 	public ResponseEntity<Page<UsuarioDto>> findAll(Pageable page) {
 
 		return ResponseEntity.ok().body(usuarioService.findAll(page));
